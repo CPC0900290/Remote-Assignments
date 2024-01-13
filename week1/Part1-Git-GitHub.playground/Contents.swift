@@ -91,33 +91,53 @@ import UIKit
  
  # Describe how to establish a GitHub repo and how to upload the local projects to GitHub. /nTry to explain your answers with as much detail as possible.
  
-    ## Establish a GitHub repo
-        First, login your GitHub account and there is a menu with option "repositories" in your account page. It will list all repo you got so far, there is a green button "new" in upper right of the page and you can click it to create a new repo.
-        You can see there is some content you need to fill. There are 'owner', 'repository name', 'Description', 'visibility(Public/Private)' in order.
-            You should choose a owner which the account you login is by default and give the repository a name. Repository name will be searched by anyone so it should be short and memorable.
-            The description is optonal, you can just leave it blank.
-            Visibility option controll who can see this repo. Public is 'anyone can see', Private is 'you choose who can see'. Both of this two choose who can commit to the repo by yourself.
-        Before you click 'Create repository' button, GitHub also offer some files that exist in almost any project('README.md, .gitignore, LISENCE) if you needed you can just let GitHub create them automatically. Or you can just create it mannually in local repo and upload it by yourself.
-        Once you finish all the options above, you can hit 'create repository' button. Your remote repo is created now and it will turn to repo page for you. You can see the information about this repo includes how to set the connection with local repo. The most important is the URL of this repo which you can use it to connect with your local repo.
-        There are a munu in upper of the page, it contains 'Code', 'Issu', 'Pull request', 'Actions', 'Projects', 'Security', 'Insights', 'Settings'. The top three
-            'Code' is the place that list your whole directories and files, it can show different coding language gor you, and just looks like a list.
-            'Issue' can list all the todos, bugs, feature requests, and more. If someon got some ideas or occur some bugs, they can create a new issue and the author will see it and deal with it maybe.
-            'Pull Request' can list all the request from other people for author or orgnization. Anyone can create new pull request according to the visibility.
-            'Actions' is for you to deploy your project.
-            'Projects' is a new feature of GitHub. You can use it to manage your issue, pull request etc.
-            'security' offer some security information about your project and also can alert you if there is  vulnerability of your dependicies.
-            'Insight' offer you some graph to statistic some data for you.
-            'Setting' can set everything about this repo by author.
+ ## Establish a GitHub repo
+ First, login your GitHub account and there is a menu with option "repositories" in your account page. It will list all repo you got so far, there is a green button "new" in upper right of the page and you can click it to create a new repo.
  
-    ## Upload the local projects to GitHub
-        First - connect local repo to remote repo
-        Opening your terminal app and create a directory "mkdir Remote-Assignment" and change the dir to it "cd Remote-Assignment". Creating README.md, LICENSE, .gitignore files in it and fill with some words.
-        Creating git "git init" that will create a .git file and you can use the git cammand in this directory.
-        Adding the files you just created to staging area "git add ." and you can check what's inside staging area before commit "git status", in case there are some files we don't want to be tracked by git. Finally,you can commit them now "git commit -m 'Creating README.md, LICENSE, .gitignore'".
-        You made these git command so far above is all in local repo. We need to connect the local repo with remote repo if we want to upload our work on GitHub.
-        Connecting GitHub "git remote add origin 'url you created in last part'", you connected local repo with remote repo now. You can see 'origin' as a nickname of remote repo in local.
-        Uploading the branch to remote "git push origin master", we success to upload the local project to GitHub now!
+ You can see there is some content you need to fill. There are 'owner', 'repository name', 'Description', 'visibility(Public/Private)' in order.
+ 
+ You should choose a owner which the account you login is by default and give the repository a name. Repository name will be searched by anyone so it should be short and memorable.
+ 
+ The description is optonal, you can just leave it blank.
+ 
+ Visibility option controll who can see this repo. Public is 'anyone can see', Private is 'you choose who can see'. Both of this two choose who can commit to the repo by yourself.
+ 
+ Before you click 'Create repository' button, GitHub also offer some files that exist in almost any project('README.md, .gitignore, LISENCE) if you needed you can just let GitHub create them automatically. Or you can just create it mannually in local repo and upload it by yourself.
+ 
+ Once you finish all the options above, you can hit 'create repository' button. Your remote repo is created now and it will turn to repo page for you. You can see the information about this repo includes how to set the connection with local repo. The most important is the URL of this repo which you can use it to connect with your local repo.
+ 
+ There are a munu in upper of the page, it contains 'Code', 'Issu', 'Pull request', 'Actions', 'Projects', 'Security', 'Insights', 'Settings'.
+ 
+ - 'Code' is the place that list your whole directories and files, it can show different coding language gor you, and just looks like a list.
+ 
+ - 'Issue' can list all the todos, bugs, feature requests, and more. If someon got some ideas or occur some bugs, they can create a new issue and the author will see it and deal with it maybe.
+ 
+ - 'Pull Request' can list all the request from other people for author or orgnization. Anyone can create new pull request according to the visibility.
+ 
+ - 'Actions' is for you to deploy your project.
+ 
+ - 'Projects' is a new feature of GitHub. You can use it to manage your issue, pull request etc.
+ 
+ - 'security' offer some security information about your project and also can alert you if there is  vulnerability of your dependicies.
+ 
+ - 'Insight' offer you some graph to statistic some data for you.
+ 
+ - 'Setting' can set everything about this repo by author.
+ 
+ ## Upload the local projects to GitHub
+ First - connect local repo to remote repo
+ 
+ Opening your terminal app and create a directory "mkdir Remote-Assignment" and change the dir to it "cd Remote-Assignment". Creating README.md, LICENSE, .gitignore files in it and fill with some words.
+ 
+ Creating git "git init" that will create a .git file and you can use the git cammand in this directory.
+ 
+ Adding the files you just created to staging area "git add ." and you can check what's inside staging area before commit "git status", in case there are some files we don't want to be tracked by git. Finally,you can commit them now "git commit -m 'Creating README.md, LICENSE, .gitignore'".
+ 
+ You made these git command so far above is all in local repo. We need to connect the local repo with remote repo if we want to upload our work on GitHub.
+ 
+ Connecting GitHub "git remote add origin 'url you created in last part'", you connected local repo with remote repo now. You can see 'origin' as a nickname of remote repo in local.
+ 
+ Uploading the branch to remote "git push origin master", we success to upload the local project to GitHub now!
 
         
- 
  */
