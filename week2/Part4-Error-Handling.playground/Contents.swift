@@ -3,18 +3,25 @@ import UIKit
 /*:
  # Part 4: Error Handling in Swift
  */
-enum GuessNumberGameError {
+enum GuessNumberGameError: Error {
     case wrongNumber
 }
 class GuessNumberGame {
     var targetNumber = 10
     func guess(number: Int) throws {
-        guard number == targetNumber else {
-            throw GuessNumberGameError.wrongNumber
+        do {
+            guard number == targetNumber else {
+                throw GuessNumberGameError.wrongNumber
+            }
+            print("Guess the right number: \(targetNumber)")
+        } catch {
+            print("Guess the wrong number: \(number), the target is: \(targetNumber)")
         }
-        print("Guess the right number: \(targetNumber)")
     }
 }
+
+let guessNumberGame = GuessNumberGame()
+guessNumberGame.guess(number: 20)
 /*:
  Read the code above first and paste it in the playground file, there is an error inside the code.
  
