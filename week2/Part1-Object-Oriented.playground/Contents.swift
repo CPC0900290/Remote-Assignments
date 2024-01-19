@@ -42,13 +42,13 @@ class Horse: Animal {
  3. Declare a class Zoo with a property weeklyHot which means the most popular one in the zoo this week. The codes below can’t work correctly, please find what data type should A be and solve the problem. Note that tiger , elephant , and horse are instances of class Tiger, Elephant, and Horse respectively.
 */
  class Zoo {
- var weeklyHot: Animal
-     init(weeklyHot: Animal) { self.weeklyHot = weeklyHot }
+ var weeklyHot: A
+     init(weeklyHot: A) {  }
  }
-let zoo = Zoo(weeklyHot: Tiger(gender: Gender.female))
- zoo.weeklyHot = Tiger(gender: Gender.undefined)
- zoo.weeklyHot = Elephant(gender: Gender.undefined)
- zoo.weeklyHot = Horse(gender: Gender.undefined)
+let zoo = Zoo(weeklyHot: Tiger())
+ zoo.weeklyHot = tiger
+ zoo.weeklyHot = elephant
+ zoo.weeklyHot = horse
 // Write your code below.
 
 /*:
