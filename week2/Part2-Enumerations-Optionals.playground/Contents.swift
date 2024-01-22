@@ -15,7 +15,7 @@ import UIKit
 
 // declare an enum named Gasoline to model gasoline.
 enum Gasoline: String {
-    case nineTwo = "92", nineFive = "95", nineEight = "98"
+    case nineTwo = "92", nineFive = "95", nineEight = "98", diesel = "diesel"
     
     var price: Double {
         get {
@@ -26,6 +26,8 @@ enum Gasoline: String {
                 return 17
             case .nineEight:
                 return 20
+            case .diesel:
+                return 10
             }
         }
     }
@@ -38,6 +40,8 @@ enum Gasoline: String {
             return 17
         case "98":
             return 20
+        case "diesel":
+            return 10
         default:
             return 0
         }

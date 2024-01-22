@@ -59,9 +59,9 @@ zoo.weeklyHot.eat()
  4. What is an instance? What does Initilizer do in Class and Struct?
  */
 /*:
- instance - It's an object created when you initialize the class/Structure/enumeration. When you difine a class/structure/enumeration, you just create a blueprint. There not a real object to store those property or methods so you can't use them. An instance is the object when you assign a class/structure/enumeration to a variable/constant and initailize it.
+ instance - An instance is stored as an object with class and an value with structure/enum. When you difine a class/structure/enumeration, you just create a blueprint, there are not a real object to store those properties or methods so you can't use them. Instance is for you to store those values when you assign a class/structure/enumeration to a variable/constant and initailize it.
  
- initializer - Initializer is a special type of function, the main task is to create the instance of class/structure/enumeration. The initialization is a two-phase proccess. In the fitst phase, the stored property should be assigned an initial value. Once those are done, the second phase begins, you can customize your stored properties as you want before the instance is considered ready for use.
+ initializer - Initializer is a special type of function, the main task is to create the instance of class/structure/enumeration. The initialization is a two-phase proccess. In the fitst phase, the stored property should be assigned an initial value. Once those are done, the second phase begins, you can customize your stored properties as you specified in initializer before the instance is considered ready for use.
 
  */
 /*:
@@ -70,17 +70,17 @@ zoo.weeklyHot.eat()
 /*:
  Struct
  
- - Inheritance: Struct can't inherit from other struct, each struct is on its own.
+ - No Inheritance: Struct can't inherit from other struct, each struct is on its own.
  
- - Value Type: Every instance that created from the same truct will be a copy of the struct. These copy are all independent, changing the value of stored property won't effect the others value.
+ - Value Type: Every instance that created from the same truct will be a copy of the struct. These copy are all independent, changing the value of stored property won't effect the value of others.
  
- - Immutable: Basically, the value of a struct can't be modified. If you create a structure with default value of stored property, you can't modify this value in the structure when you initialize it with parameter. Instead, it will create a whole new struct which is a copy of the original one.
+ - Immutable: Basically, the value of a struct can't be modified. If you create a structure with default value of stored property, you can't modify this value in the structure when you initialize it with parameter. Instead, it will create a whole new struct which is a copy of the original one with the value you modified.
  
  Class
  
  - Inheritance: Class can inherit from parent, it will be like a family tree. The inheritance can get the feature of their parent.
  
- - Reference Type: Every instance that created from the same class refer to the same value of the properties. The value will be the same even you access different instances.
+ - Reference Type: Every instance that created from the same class refers to the same value of the properties. The value will be changed when you access and change the value from different instances.
  
  - Mutable: You can change the value of class. Basically, every time you create an instance with different parameter, you change the value of the class. You can get the same value if you access the value from the other instance.
  */
@@ -108,7 +108,7 @@ zoo.weeklyHot.eat()
  7. What’s the difference between instance method and type method ?
  */
 /*:
- - Instance method: It's a normal method in the type class/structur/enumeration. You can only call it on instance, which means you need to assign a instance of it before you call it. It will occur error when complie if you call it on type itself.
+ - Instance method: It's a normal method in the type class/structur/enumeration. You can only call it on instance, which means you need to assign a instance of type before you call it. It will occur an error when complie if you call it on type itself.
  
  - Type method: You can specified the method with static/class in front of var/let to create type method. It can only be called on type itself, which means you have to call it without instance, just calling it using type(class/struct/enum) name. The 'class' method can be overrided from subclass, the static method can't.
  */
