@@ -7,9 +7,9 @@ import UIKit
  */
 
 /*:
- Basically closure is a function without name. It can group the code excute together without creating named function.
+ Basically closure is a function without name. It can group the code excute together without creating named function. 
  
- There are two way you can excute a closure, depands on where you declare the closure. You use variable/constant name to excute the closure if you decalare it to the variable/constant.
+ There are two way you can excute a closure, depands on where you declare the closure. You use variable/constant name to excute the closure if you assign it to the variable/constant.
  
  You call the function name with closure as an argument to excute the closure if you difine a closure as parameter in function.
  */
