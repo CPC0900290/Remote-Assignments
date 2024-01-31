@@ -84,6 +84,8 @@ zoo.weeklyHot.eat()
  
  - Mutable: You can change the value of class. Basically, every time you create an instance with different parameter, you change the value of the class. You can get the same value if you access the value from the other instance.
  */
+
+
 /*:
  6. What’s the difference between reference type and value type ?
  */
